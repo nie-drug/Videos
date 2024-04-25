@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2024 The Project Material
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="-12dp"
+        android:paddingHorizontal="24dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:background="@drawable/thumbnail_placeholder"
+            android:id="@+id/thumbnail"
+            android:importantForAccessibility="no"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/video_thumbnail_width"
+            android:layout_height="@dimen/video_thumbnail_height"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="?attr/shapeAppearanceCornerSmall"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/thumbnail"
+            android:orientation="vertical">
+            <com.google.android.material.textview.MaterialTextView
+                android:ellipsize="end"
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textAppearance="?attr/textAppearanceTitleSmall"
+                android:textColor="?attr/colorOnSurface"
+                android:textDirection="locale"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:ellipsize="end"
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textDirection="locale"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:ellipsize="end"
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textDirection="locale"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.projectmaterial.videos.view.MenuItemView
+        android:id="@+id/menu_item_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.projectmaterial.videos.view.MenuItemView
+        android:id="@+id/menu_item_rename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.projectmaterial.videos.view.MenuItemView
+        android:id="@+id/menu_item_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.projectmaterial.videos.view.MenuItemView
+        android:id="@+id/menu_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.projectmaterial.videos.view.MenuItemView
+        android:id="@+id/menu_item_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

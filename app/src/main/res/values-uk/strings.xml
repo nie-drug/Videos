@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2024 The Project Material
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <!-- Arrays -->
+    <string-array name="bitrate_units">
+        <item>біт/с</item>
+        <item>кбіт/с</item>
+        <item>Мбіт/с</item>
+        <item>Гбіт/с</item>
+    </string-array>
+    <string-array name="size_units">
+        <item>Б</item>
+        <item>КБ</item>
+        <item>МБ</item>
+        <item>ГБ</item>
+        <item>ТБ</item>
+    </string-array>
+    <!-- Plurals -->
+    <plurals name="video_count">
+        <item quantity="one">%d відео</item>
+        <item quantity="other">%d відео</item>
+    </plurals>
+    <!-- App -->
+    <string name="app_name">Відео</string>
+    <string name="copied_to_clipboard">Скопійовано в буфер обміну</string>
+    <string name="directory_internal_storage">Внутрішня пам"'"ть</string>
+    <!-- BottomNavigationView -->
+    <string name="navigation_title_videos">Відео</string>
+    <string name="navigation_title_starred">Обране</string>
+    <string name="navigation_title_folders">Папки</string>
+    <!-- BottomSheetDialog: Sort by -->
+    <string name="bottom_sheet_sort_by_criteria_name">За назвою</string>
+    <string name="bottom_sheet_sort_by_criteria_duration">За тривалістю</string>
+    <string name="bottom_sheet_sort_by_criteria_date">За датою</string>
+    <string name="bottom_sheet_sort_by_criteria_size">За розміром</string>
+    <string name="bottom_sheet_sort_by_criteria_video_count">За кількістю відео</string>
+    <string name="bottom_sheet_sort_by_order_a_z">А-Я</string>
+    <string name="bottom_sheet_sort_by_order_z_a">Я-А</string>
+    <string name="bottom_sheet_sort_by_order_shortest">Короткі</string>
+    <string name="bottom_sheet_sort_by_order_longest">Довгі</string>
+    <string name="bottom_sheet_sort_by_order_oldest">Старі</string>
+    <string name="bottom_sheet_sort_by_order_newest">Нові</string>
+    <string name="bottom_sheet_sort_by_order_smallest">Маленькі</string>
+    <string name="bottom_sheet_sort_by_order_largest">Великі</string>
+    <!-- BottomSheetDialog: Video Options -->
+    <string name="bottom_sheet_video_options_star">Додати до обраного</string>
+    <string name="bottom_sheet_video_options_unstar">Вилучити з обраного</string>
+    <string name="bottom_sheet_video_options_rename">Перейменувати</string>
+    <string name="bottom_sheet_video_options_share">Поділитися</string>
+    <string name="bottom_sheet_video_options_info">Інформація</string>
+    <string name="bottom_sheet_video_options_delete">Видалити</string>
+    <!-- BottomSheetDialog: Video Info -->
+    <string name="bottom_sheet_video_info_file_name">Назва файла</string>
+    <string name="bottom_sheet_video_info_location">Розташування</string>
+    <string name="bottom_sheet_video_info_resolution">Роздільна здатність</string>
+    <string name="bottom_sheet_video_info_bitrate">Бітрейт</string>
+    <string name="bottom_sheet_video_info_frame_rate">Частота кадрів</string>
+    <string name="bottom_sheet_video_info_frame_rate_fps">к/с</string>
+    <string name="bottom_sheet_video_info_codec">Кодек</string>
+    <string name="bottom_sheet_video_info_duration">Тривалість</string>
+    <string name="bottom_sheet_video_info_size">Розмір</string>
+    <!-- Dialog -->
+    <string name="dialog_negative_button_cancel">Скасувати</string>
+    <string name="dialog_positive_button_delete">Видалити</string>
+    <string name="dialog_positive_button_rename">Перейменувати</string>
+    <string name="dialog_positive_button_save">Зберегти</string>
+    <!-- Dialog: Rename Video -->
+    <string name="dialog_rename_title">Перейменування</string>
+    <string name="dialog_rename_error_empty_input">Введіть назву файла</string>
+    <string name="dialog_rename_error_invalid_characters">Недопустимі символи</string>
+    <!-- Dialog: Delete Video -->
+    <string name="dialog_delete_title">Видалення</string>
+    <string name="dialog_delete_message">Ви дійсно хочете видалити це відео?</string>
+    <!-- Empty States -->
+    <string name="empty_state_summary_directories">Організуйте ваши відео для швидкого доступу</string>
+    <string name="empty_state_summary_favorites">Тут будуть відображатися відео, які ви додасте до обраного</string>
+    <string name="empty_state_summary_videos">На пристрої не знайдено жодного відео</string>
+    <string name="empty_state_title_directories">Немає папок</string>
+    <string name="empty_state_title_favorites">Немає обраних</string>
+    <string name="empty_state_title_videos">Немає відео</string>
+    <!-- Menus -->
+    <string name="menu_list_view">Перейти до виду списку</string>
+    <string name="menu_grid_view">Перейти до виду таблиці</string>
+    <string name="menu_sort">Сортування</string>
+    <string name="menu_settings">Налаштування</string>
+    <!-- PreferenceActivity: Settings -->
+    <string name="settings">Налаштування</string>
+    <!-- PreferenceCategory: Customization -->
+    <string name="pref_category_customization">Персоналізація</string>
+    <!-- ListPreference: Theme -->
+    <string name="pref_dialog_title_theme">Виберіть тему</string>
+    <string-array name="pref_entries_theme">
+        <item>За замовчуванням</item>
+        <item>Світла</item>
+        <item>Темна</item>
+    </string-array>
+    <string name="pref_title_theme">Тема</string>
+    <!-- SwitchPreferenceCompat: Color scheme -->
+    <string name="pref_summary_off_color_scheme">Статична</string>
+    <string name="pref_summary_on_color_scheme">Динамічна</string>
+    <string name="pref_title_color_scheme">Кольорова схема</string>
+    <!-- SwitchPreferenceCompat: High contrast mode -->
+    <string name="pref_summary_off_high_contrast_mode">Вимкнено</string>
+    <string name="pref_summary_on_high_contrast_mode">Увімкнено</string>
+    <string name="pref_title_high_contrast_mode">Високий контраст</string>
+    <!-- ListPreference: Language -->
+    <string name="pref_dialog_title_language">Виберіть мову</string>
+    <string name="pref_entry_language_system">За замовчуванням</string>
+    <string name="pref_title_language">Мова</string>
+    <!-- PreferenceCategory: Thumbnails -->
+    <string name="pref_category_thumbnails">Мініатюри відео</string>
+    <!-- Preference: Thumbnails directory -->
+    <string name="pref_summary_thumbnails_dir">Керування шляхом каталогу користувальницьких мініатюр для відео.</string>
+    <string name="pref_title_thumbnails_dir">Каталог мініатюр відео</string>
+    <!-- PreferenceActivity: Thumbnails directory -->
+    <string name="pref_footer_thumbnails_dir">Переконайтеся, що каталог, який ви вкажете, призначений виключно для мініатюр, оскільки це приховає медіафайли з медіа-сховища після налаштування шляху до каталогу, що зробить їх недоступними для медіа-сховища.\n\nПам"'"ятайте, що назви мініатюр повинні співпадати з назвами відповідних відеофайлів.</string>
+    <string name="pref_intro_thumbnails_dir">Керування шляхом каталогу, призначеного для відображення користувальницьких мініатюр відео.</string>
+    <!-- EditTextPreference: Directory path -->
+    <string name="pref_dialog_title_thumbnails_dir">Введіть шлях до каталогу</string>
+    <string name="pref_title_thumbnails_dir_path">Шлях до каталогу</string>
+    <!-- Preference: Clear cached thumbnails -->
+    <string name="pref_summary_clear_cached_thumbnails">Механізм кешування зберігає копію всіх мініатюр відео для швидкого відображення при наступному відкритті застосунку.</string>
+    <string name="pref_title_clear_cached_thumbnails">Очистити кешовані мініатюри</string>
+    <!-- Snackbar -->
+    <string name="snackbar_message_clear_cached_thumbnails_result_error">Сталася помилка при очищенні кешу.</string>
+    <string name="snackbar_message_clear_cached_thumbnails_result_success">Кеш успішно очищено.</string>
+    <string name="snackbar_message_favorite_result_starred">\u0022%1$s\u0022 було додано до обраного.</string>
+    <string name="snackbar_message_favorite_result_unstarred">\u0022%1$s\u0022 було вилучено з обраного.</string>
+    <string name="snackbar_message_delete_result_error">Сталася помилка при видаленні відео.</string>
+    <string name="snackbar_message_delete_result_error_does_not_exist">Сталася помилка при видаленні відео. Відео не існує.</string>
+    <string name="snackbar_message_delete_result_success">\u0022%1$s\u0022 було безповоротно видалено.</string>
+    <string name="snackbar_message_rename_result_error">Сталася помилка при перейменуванні відео.</string>
+    <string name="snackbar_message_rename_result_success">Відео успішно перейменовано.</string>
+    <string name="snackbar_message_thumbnails_dir_error">Неправильний шлях до каталогу.</string>
+    <string name="snackbar_message_thumbnails_dir_success">Шлях до каталогу успішно оновлено.</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2024 The Project Material
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:title="@string/pref_category_customization">
+        <ListPreference
+            app:defaultValue="MODE_NIGHT_FOLLOW_SYSTEM"
+            app:dialogTitle="@string/pref_dialog_title_theme"
+            app:entries="@array/pref_entries_theme"
+            app:entryValues="@array/pref_values_theme"
+            app:key="pref_key_theme"
+            app:title="@string/pref_title_theme"
+            app:useSimpleSummaryProvider="true"/>
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="pref_key_high_contrast"
+            app:summaryOff="@string/pref_summary_off_high_contrast_mode"
+            app:summaryOn="@string/pref_summary_on_high_contrast_mode"
+            app:title="@string/pref_title_high_contrast_mode"/>
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="pref_key_color_scheme"
+            app:summaryOff="@string/pref_summary_off_color_scheme"
+            app:summaryOn="@string/pref_summary_on_color_scheme"
+            app:title="@string/pref_title_color_scheme"/>
+        <ListPreference
+            app:defaultValue=""
+            app:dialogTitle="@string/pref_dialog_title_language"
+            app:entries="@array/pref_entries_language"
+            app:entryValues="@array/pref_values_language"
+            app:key="pref_key_language"
+            app:title="@string/pref_title_language"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:title="@string/pref_category_thumbnails">
+        <Preference
+            app:key="pref_key_thumbnails_dir"
+            app:summary="@string/pref_summary_thumbnails_dir"
+            app:title="@string/pref_title_thumbnails_dir"/>
+        <Preference
+            app:key="pref_key_clear_cached_thumbnails"
+            app:summary="@string/pref_summary_clear_cached_thumbnails"
+            app:title="@string/pref_title_clear_cached_thumbnails"/>
+    </PreferenceCategory>
+</PreferenceScreen>

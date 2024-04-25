@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2024 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="-8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:strokeWidth="0dp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.projectmaterial.videos.view.InfoItemView
+                        android:id="@+id/info_item_complete_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Space
+                        android:id="@+id/info_space_horizontal_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <com.projectmaterial.videos.view.InfoItemView
+                        android:id="@+id/info_item_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Space
+                        android:id="@+id/info_space_horizontal_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/info_item_container_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.projectmaterial.videos.view.InfoItemView
+                            android:id="@+id/info_item_resolution"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                        <Space
+                            android:id="@+id/info_space_vertical_1"
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"/>
+                        <com.projectmaterial.videos.view.InfoItemView
+                            android:id="@+id/info_item_bitrate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <Space
+                        android:id="@+id/info_space_horizontal_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/info_item_container_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.projectmaterial.videos.view.InfoItemView
+                            android:id="@+id/info_item_frame_rate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                        <Space
+                            android:id="@+id/info_space_vertical_2"
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"/>
+                        <com.projectmaterial.videos.view.InfoItemView
+                            android:id="@+id/info_item_codec"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <Space
+                        android:id="@+id/info_space_horizontal_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.projectmaterial.videos.view.InfoItemView
+                            android:id="@+id/info_item_duration"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                        <Space
+                            android:id="@+id/info_space_vertical_3"
+                            android:layout_width="2dp"
+                            android:layout_height="0dp"/>
+                        <com.projectmaterial.videos.view.InfoItemView
+                            android:id="@+id/info_item_size"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2024 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <!-- Boolean -->
+    <bool name="settingslib_config_icon_space_reserved">false</bool>
+    <bool name="settingslib_config_allow_divider">false</bool>
+    <!-- CollapsingToolbarLayout -->
+    <style name="CollapsingToolbarTitle.Expanded" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">36dp</item>
+    </style>
+    <!-- Preference -->
+    <style name="PreferenceTheme.SettingsLib" parent="@style/PreferenceThemeOverlay">
+        <item name="dialogPreferenceStyle">@style/SettingsDialogPreference.SettingsLib</item>
+        <item name="editTextPreferenceStyle">@style/SettingsEditTextPreference.SettingsLib</item>
+        <item name="footerPreferenceStyle">@style/SettingsPreference.SettingsLib</item>
+        <item name="preferenceCategoryStyle">@style/SettingsPreferenceCategory.SettingsLib</item>
+        <item name="preferenceCategoryTitleTextAppearance">@style/TextAppearance.CategoryTitle.SettingsLib</item>
+        <item name="preferenceScreenStyle">@style/SettingsPreferenceScreen.SettingsLib</item>
+        <item name="preferenceStyle">@style/SettingsPreference.SettingsLib</item>
+        <item name="switchPreferenceCompatStyle">@style/SettingsSwitchPreferenceCompat.SettingsLib</item>
+    </style>
+    <style name="SettingsDialogPreference.SettingsLib" parent="@style/Preference.DialogPreference.Material">
+        <item name="layout">@layout/settingslib_preference</item>
+        <item name="iconSpaceReserved">@bool/settingslib_config_icon_space_reserved</item>
+    </style>
+    <style name="SettingsEditTextPreference.SettingsLib" parent="@style/Preference.DialogPreference.EditTextPreference.Material">
+        <item name="layout">@layout/settingslib_preference</item>
+        <item name="dialogLayout">@layout/settingslib_preference_dialog_edittext</item>
+        <item name="iconSpaceReserved">@bool/settingslib_config_icon_space_reserved</item>
+    </style>
+    <style name="SettingsPreferenceCategory.SettingsLib" parent="@style/Preference.Category.Material">
+        <item name="iconSpaceReserved">@bool/settingslib_config_icon_space_reserved</item>
+        <item name="allowDividerAbove">@bool/settingslib_config_allow_divider</item>
+        <item name="allowDividerBelow">@bool/settingslib_config_allow_divider</item>
+    </style>
+    <style name="SettingsPreferenceScreen.SettingsLib" parent="@style/Preference.PreferenceScreen.Material">
+        <item name="layout">@layout/settingslib_preference</item>
+        <item name="iconSpaceReserved">@bool/settingslib_config_icon_space_reserved</item>
+    </style>
+    <style name="SettingsPreference.SettingsLib" parent="@style/Preference.Material">
+        <item name="layout">@layout/settingslib_preference</item>
+        <item name="iconSpaceReserved">@bool/settingslib_config_icon_space_reserved</item>
+    </style>
+    <style name="SettingsSwitchPreferenceCompat.SettingsLib" parent="@style/Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/settingslib_preference_widget_switch_compat</item>
+        <item name="layout">@layout/settingslib_preference</item>
+        <item name="iconSpaceReserved">@bool/settingslib_config_icon_space_reserved</item>
+    </style>
+    <style name="TextAppearance.CategoryTitle.SettingsLib" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+    <style name="TextAppearance.PreferenceTitle.SettingsLib" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="Widget.ProjectX.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="android:layout_margin">@null</item>
+        <item name="android:layout_marginHorizontal">24dp</item>
+        <item name="android:layout_marginVertical">24dp</item>
+    </style>
+    <style name="Widget.ProjectX.Snackbar.HorizontalMargin" parent="Widget.ProjectX.Snackbar">
+        <item name="android:layout_marginHorizontal">24dp</item>
+        <item name="android:layout_marginVertical">0dp</item>
+    </style>
+    <style name="MaterialAlertDialog.SettingsLib" parent="MaterialAlertDialog.Material3">
+        <item name="singleChoiceItemLayout">@layout/settingslib_alert_select_dialog_singlechoice</item>
+    </style>
+    <style name="MaterialAlertDialog.SettingsLib.Title.Panel.CenterStacked" parent="MaterialAlertDialog.Material3.Title.Panel.CenterStacked">
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">24dp</item>
+    </style>
+    <style name="MaterialAlertDialog.SettingsLib.Title.Text.CenterStacked" parent="MaterialAlertDialog.Material3.Title.Text.CenterStacked">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <declare-styleable name="MenuItemView">
+        <attr name="item_title" format="reference" />
+        <attr name="item_subtitle" format="reference" />
+        <attr name="item_subtitle_alt" format="string"/>
+        <attr name="item_icon" format="reference" />
+    </declare-styleable>
+</resources>
